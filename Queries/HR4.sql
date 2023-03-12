@@ -9,9 +9,19 @@ select AVG(SALARY)
 from EMPLOYEES
 where JOB_ID ='IT_PROG';
 
+select AVG(SALARY)
+from EMPLOYEES
+where JOB_ID ='AC_ACCOUNT';
+
 select JOB_ID, avg(salary), count(*), sum(SALARY)
 from EMPLOYEES
 group by JOB_ID;
+
+select JOB_ID, avg(SALARY), count(*)
+from EMPLOYEES
+group by JOB_ID;
+
+select salary from EMPLOYEES;
 
 
 --get me job_ids where their avg salary is more than 5k
